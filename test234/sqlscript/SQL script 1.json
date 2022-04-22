@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE dbo.VehicleAverages\n ( \n     [AverageEngineTemperature] [float] NOT NULL, \n     [AverageSpeed] [float] NOT NULL, \n     [Snapshot] [datetime] NOT NULL \n) \n     WITH \n     ( DISTRIBUTION = ROUND_ROBIN, CLUSTERED COLUMNSTORE INDEX ) \n     GO \n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "ContosoAuto",
+				"poolName": "ContosoAuto"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
